@@ -24,3 +24,11 @@ fn verify_test() {
     assert_eq!(80, price2);
     assert_eq!(65, price3);
 }
+
+fn calculate_apple_price(num:i32) -> i32 {
+    if num > 40 {
+        num
+    } else {
+        num * 2
+    }
+}
