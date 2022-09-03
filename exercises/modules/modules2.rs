@@ -3,13 +3,13 @@
 // 'use' and 'as' keywords. Fix these 'use' statements to make the code compile.
 // Make me compile! Execute `rustlings hint modules2` for hints :)
 
-// I AM NOT DONE
+// 
 
 mod delicious_snacks {
 
     // TODO: Fix these use statements
-    use self::fruits::PEAR as ???
-    use self::veggies::CUCUMBER as ???
+    pub use self::fruits::PEAR as Pear;
+    pub use self::veggies::CUCUMBER as Cucumber;
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";
@@ -25,7 +25,7 @@ mod delicious_snacks {
 fn main() {
     println!(
         "favorite snacks: {} and {}",
-        delicious_snacks::fruit,
-        delicious_snacks::veggie
+        delicious_snacks::Pear,
+        delicious_snacks::Cucumber
     );
 }
